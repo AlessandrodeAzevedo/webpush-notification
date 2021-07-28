@@ -1,0 +1,13 @@
+{
+    "name": "alessandro/webpush-notification",
+    "authors": [
+        {
+            "name": "Alessandro de Azevedo",
+            "email": "alessandrodeazevedo@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.3",
+        "minishlink/web-push": "^6.0"
+    }
+}
