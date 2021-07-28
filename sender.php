@@ -7,13 +7,13 @@ require "./vendor/autoload.php";
 
 use Minishlink\WebPush\WebPush;
 use Minishlink\WebPush\Subscription;
-$endpoint = 'https://fcm.googleapis.com/fcm/send/ds_FwqIkw3E:APA91bHtofdl5aTHFv_srsxmvQmwZT-BaP4PhIMBYj4sXyQQvkUqp2_4aexE-TQzCDF4hftAuApbgNThsGvbIY8cFQFzuk3-KbscZXIv7FirKmneVdhBqfM8nddimTAb5Njx7NZ5pSiA';
+$endpoint = '';
 
 $auth = [
     'VAPID' => [
-        'subject' => 'mailto: <alessandrodeazevedo@gmail.com>', 
-        'publicKey' => 'BJUfJsU7EDmjXHpYV30pZJaA0WPFjWCKRTfmKAYesAaEwczoeNynzHanouDqmd-_kiLLtaCwu3JpyYXSJa26ga0',
-        'privateKey' => '64ZeS8UUxDHomD8AOOKyAiDxtt6mZGXynNKI5Rj47Ng',
+        'subject' => '', 
+        'publicKey' => '',
+        'privateKey' => '',
     ],
 ];
 $notification['payload'] = '{msg:"test"}';
@@ -30,31 +30,3 @@ foreach ($webPush->flush() as $report) {
         echo "[x] Message failed to sent for subscription {$endpoint}: {$report->getReason()}";
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

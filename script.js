@@ -1,4 +1,4 @@
-const APP_SERVER_KEY = "BJUfJsU7EDmjXHpYV30pZJaA0WPFjWCKRTfmKAYesAaEwczoeNynzHanouDqmd-_kiLLtaCwu3JpyYXSJa26ga0";
+const APP_SERVER_KEY = "";
 function subscribe(){
     if ("serviceWorker" in navigator) {
         if ("Notification" in window) {
@@ -59,4 +59,3 @@ Notification.requestPermission();
 const buttonSubscribe = document.querySelector("button.subscribe")
 
 buttonSubscribe.onclick = () => { subscribe() }
-
